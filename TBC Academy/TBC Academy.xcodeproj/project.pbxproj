@@ -51,6 +51,8 @@
 		D93277DC2AC6E3E200B6D2FD /* TBC_AcademyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBC_AcademyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D93277E92AC6E43600B6D2FD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D9963B8E2AC7789400CBDE02 /* Assignment3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D9FC15542ACB5D8A0054AFD9 /* Assignment4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment4.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D9FC15552ACE15770054AFD9 /* Assignment5.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment5.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,8 @@
 				D93277C72AC6E3E100B6D2FD /* Info.plist */,
 				D93277E92AC6E43600B6D2FD /* MyPlayground.playground */,
 				D9963B8E2AC7789400CBDE02 /* Assignment3.playground */,
+				D9FC15542ACB5D8A0054AFD9 /* Assignment4.playground */,
+				D9FC15552ACE15770054AFD9 /* Assignment5.playground */,
 			);
 			path = "TBC Academy";
 			sourceTree = "<group>";

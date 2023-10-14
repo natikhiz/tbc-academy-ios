@@ -1,3 +1,7 @@
+
+
+
+
 // სუპერ გმირების შერკინება😏💪🏻😱
 //
 // 1. შევქმნათ Class-ი SuperEnemy with properties: String name, Int hitPoints (ანუ სიცოცხლის რაოდენობა).

@@ -51,7 +51,7 @@
 		D93277DC2AC6E3E200B6D2FD /* TBC_AcademyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBC_AcademyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D93277E92AC6E43600B6D2FD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D99365112AD7B11900ADE574 /* Assignment9.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment9.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D99365122ADA637000ADE574 /* Assignment 10.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Assignment 10.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D99365122ADA637000ADE574 /* Assignment10.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment10.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D9963B8E2AC7789400CBDE02 /* Assignment3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D9FC15542ACB5D8A0054AFD9 /* Assignment5.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment5.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D9FC15562AD0BD0B0054AFD9 /* Assignment7.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment7.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -86,8 +86,6 @@
 		D93277AD2AC6E3CB00B6D2FD = {
 			isa = PBXGroup;
 			children = (
-				D99365112AD7B11900ADE574 /* Assignment9.playground */,
-				D9FC15572AD399EE0054AFD9 /* Assignment8.playground */,
 				D93277B82AC6E3CC00B6D2FD /* TBC Academy */,
 				D93277CF2AC6E3E200B6D2FD /* TBC AcademyTests */,
 				D93277D92AC6E3E200B6D2FD /* TBC AcademyUITests */,
@@ -108,6 +106,7 @@
 		D93277B82AC6E3CC00B6D2FD /* TBC Academy */ = {
 			isa = PBXGroup;
 			children = (
+				D99365132ADBBBA300ADE574 /* Assignments */,
 				D93277B92AC6E3CC00B6D2FD /* AppDelegate.swift */,
 				D93277BB2AC6E3CC00B6D2FD /* SceneDelegate.swift */,
 				D93277BD2AC6E3CC00B6D2FD /* ViewController.swift */,
@@ -116,10 +115,6 @@
 				D93277C42AC6E3E100B6D2FD /* LaunchScreen.storyboard */,
 				D93277C72AC6E3E100B6D2FD /* Info.plist */,
 				D93277E92AC6E43600B6D2FD /* MyPlayground.playground */,
-				D9963B8E2AC7789400CBDE02 /* Assignment3.playground */,
-				D9FC15542ACB5D8A0054AFD9 /* Assignment5.playground */,
-				D9FC15562AD0BD0B0054AFD9 /* Assignment7.playground */,
-				D99365122ADA637000ADE574 /* Assignment 10.playground */,
 			);
 			path = "TBC Academy";
 			sourceTree = "<group>";
@@ -139,6 +134,19 @@
 				D93277DC2AC6E3E200B6D2FD /* TBC_AcademyUITestsLaunchTests.swift */,
 			);
 			path = "TBC AcademyUITests";
+			sourceTree = "<group>";
+		};
+		D99365132ADBBBA300ADE574 /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				D9963B8E2AC7789400CBDE02 /* Assignment3.playground */,
+				D9FC15542ACB5D8A0054AFD9 /* Assignment5.playground */,
+				D9FC15562AD0BD0B0054AFD9 /* Assignment7.playground */,
+				D99365122ADA637000ADE574 /* Assignment10.playground */,
+				D99365112AD7B11900ADE574 /* Assignment9.playground */,
+				D9FC15572AD399EE0054AFD9 /* Assignment8.playground */,
+			);
+			path = Assignments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

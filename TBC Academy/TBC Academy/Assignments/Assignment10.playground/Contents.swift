@@ -6,8 +6,8 @@
 // Method-ი რომელიც დაგვიბეჭდავს ინფორმაციას lockdown-ის ქვეშ ხომ არაა ჩვენი ControlCenter-ი.
 
 class ControlCenter: StationModule {
-    var isLockedDown = false
-    let securityCode: String
+    private var isLockedDown = false
+    private let securityCode: String
     
     init(securityCode: String) {
         self.securityCode = securityCode
@@ -35,14 +35,14 @@ class ControlCenter: StationModule {
 // Method რომელიც მოიპოვებს(დაამატებს) ნიმუშებს ჩვენს Array-ში.
 
 class ResearchLab: StationModule {
-    var arrey: [String] = []
+    private var samples: [String] = []
     
     init() {
         super.init(moduleName: "Research Lab")
     }
     
-    func add(sample: String) {
-        arrey.append(sample)
+    func addSample(_ sample: String) {
+        samples.append(sample)
     }
 }
 
@@ -52,7 +52,7 @@ class ResearchLab: StationModule {
 // Method რომელიც გვეტყვის ჟანგბადის სტატუსზე.
 
 class LifeSupportSystem: StationModule {
-    var oxygenLevel: Int
+    private var oxygenLevel: Int
     
     init(oxygenLevel: Int) {
         self.oxygenLevel = oxygenLevel
@@ -69,7 +69,6 @@ class LifeSupportSystem: StationModule {
 // 4-StationModule-ი
 // With properties: moduleName: String და drone: Drone? (optional).
 // Method რომელიც დრონს მისცემს თასქს.
-
 
 class StationModule {
     var moduleName: String
@@ -96,14 +95,18 @@ class StationModule {
 // Method რომელიც შეამოწმებს აქვს თუ არა დრონს თასქი და თუ აქვს დაგვიბჭდავს რა სამუშაოს ასრულებს ის.
 
 class Drone {
-    var task: String?
-    var assignedModule: StationModule
-    var missionControlLink: MissionControl?
+    private var task: String?
+    private var assignedModule: StationModule
+    private var missionControlLink: MissionControl?
     
     init(task: String? = nil, assignedModule: StationModule, missionControlLink: MissionControl? = nil) {
         self.task = task
         self.assignedModule = assignedModule
         self.missionControlLink = missionControlLink
+    }
+    
+    func assignTask(_ task: String) {
+        self.task = task
     }
     
     func checkWork() {
@@ -115,7 +118,7 @@ class Drone {
     }
 }
 
-// 7-OrbitronSpaceStation-ი შევქმნათ, შიგნით ავაწყოთ ჩვენი მოდულები ControlCenter-ი, ResearchLab-ი და LifeSupportSystem-ა. 
+// 7. OrbitronSpaceStation-ი შევქმნათ, შიგნით ავაწყოთ ჩვენი მოდულები ControlCenter-ი, ResearchLab-ი და LifeSupportSystem-ა.
 // ასევე ამ მოდულებისთვის გავაკეთოთ თითო დრონი და მივაწოდოთ ამ მოდულებს რათა მათ გამოყენება შეძლონ.
 // ასევე ჩვენს OrbitronSpaceStation-ს შევუქმნათ ფუნქციონალი lockdown-ის რომელიც საჭიროების შემთხვევაში controlCenter-ს დალოქავს.
 
@@ -128,8 +131,13 @@ class OrbitronSpaceStation {
     
     init() {
         self.controlCenter = ControlCenter(securityCode: securityCode)
+        self.controlCenter.drone = Drone(assignedModule: controlCenter)
+        
         self.researchLab = ResearchLab()
+        self.researchLab.drone = Drone(assignedModule: researchLab)
+        
         self.lifeSupportSystem = LifeSupportSystem(oxygenLevel: 23)
+        self.lifeSupportSystem.drone = Drone(assignedModule: lifeSupportSystem)
     }
     
     func lockdown() {
@@ -148,18 +156,48 @@ class OrbitronSpaceStation {
 class MissionControl {
     var spaceStation: OrbitronSpaceStation?
     
+    func linkToSpaceStation(_ spaceStation: OrbitronSpaceStation) {
+        self.spaceStation = spaceStation
+    }
     
+    func requestControlCenterStatus() -> Bool {
+        return spaceStation?.controlCenter.isLockedDown
+    }
+    
+    func requestOxygenStatus() -> Int {
+        return spaceStation?.lifeSupportSystem.getOxygenLevel()
+    }
+    
+    func requestDroneStatus() {
+        // გაარკვევს რას ნიშნავს ვერ მივხვდი, კონკრეტულ მოდულზეც ასევე
+        // უნდა დააბრუნოს რამე? უნდა დაბეჭდოს? მასივი?
+    }
+}
         
         
 
-//9-და ბოლოს
-//შევქმნათ OrbitronSpaceStation,
-//შევქმნათ MissionControl-ი,
-//missionControl-ი დავაკავშიროთ OrbitronSpaceStation სისტემასთან,
-//როცა კავშირი შედგება missionControl-ით მოვითხოვოთ controlCenter-ის status-ი.
-//controlCenter-ის, researchLab-ის და lifeSupport-ის მოდულების დრონებს დავურიგოთ თასქები.
-//შევამოწმოთ დრონების სტატუსები.
-//შევამოწმოთ ჟანგბადის რაოდენობა.
-//შევამოწმოთ ლოქდაუნის ფუნქციონალი და შევამოწმოთ დაილოქა თუ არა ხომალდი სწორი პაროლი შევიყვანეთ თუ არა.
-//
-//10- გამოიყენეთ access levels სადაც საჭიროა (ცვლადებთან და მეთოდებთან).
+// 9-და ბოლოს
+// შევქმნათ OrbitronSpaceStation,
+// შევქმნათ MissionControl-ი,
+// missionControl-ი დავაკავშიროთ OrbitronSpaceStation სისტემასთან,
+// როცა კავშირი შედგება missionControl-ით მოვითხოვოთ controlCenter-ის status-ი.
+// controlCenter-ის, researchLab-ის და lifeSupport-ის მოდულების დრონებს დავურიგოთ თასქები.
+// შევამოწმოთ დრონების სტატუსები.
+// შევამოწმოთ ჟანგბადის რაოდენობა.
+// შევამოწმოთ ლოქდაუნის ფუნქციონალი და შევამოწმოთ დაილოქა თუ არა ხომალდი სწორი პაროლი შევიყვანეთ თუ არა.
+
+let orbitronSpaceStation = OrbitronSpaceStation()
+let missionControl = MissionControl()
+missionControl.linkToSpaceStation(orbitronSpaceStation)
+missionControl.requestControlCenterStatus()
+
+orbitronSpaceStation.controlCenter.giveTaskToDrone(task: "First Task")
+orbitronSpaceStation.researchLab.giveTaskToDrone(task: "Second Task")
+orbitronSpaceStation.lifeSupportSystem.giveTaskToDrone(task: "Third Task")
+
+missionControl.requestDroneStatus()
+missionControl.requestOxygenStatus()
+missionControl.requestControlCenterStatus()
+
+// 10- გამოიყენეთ access levels სადაც საჭიროა (ცვლადებთან და მეთოდებთან).
+// +

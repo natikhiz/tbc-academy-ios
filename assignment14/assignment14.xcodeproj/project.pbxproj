@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D95B598D2AEE9C79008E4480 /* MyPlayground3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D9E131E42AE9A06400BF559E /* Assignment14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E131E72AE9A06400BF559E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E131E92AE9A06400BF559E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		D9E131DB2AE9A06400BF559E = {
 			isa = PBXGroup;
 			children = (
+				D95B598D2AEE9C79008E4480 /* MyPlayground3.playground */,
 				D9E131E62AE9A06400BF559E /* Assignment14 */,
 				D9E131FD2AE9A06C00BF559E /* Assignment14Tests */,
 				D9E132072AE9A06C00BF559E /* Assignment14UITests */,
@@ -446,6 +448,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KX2NAC6M42;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Assignment14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,6 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KX2NAC6M42;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Assignment14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

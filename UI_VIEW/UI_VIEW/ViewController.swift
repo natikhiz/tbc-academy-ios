@@ -60,6 +60,7 @@ class ViewController: UIViewController {
             resultLabel.text = getGCD(firstNumber, secondNumber).stringValue
         }
     }
+    
     private func getGCD(_ a: Int, _ b: Int) -> Int {
         let r = a % b
         

@@ -15,7 +15,7 @@
 		FBD874BA2AEF759F00E44233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD874B82AEF759F00E44233 /* LaunchScreen.storyboard */; };
 		FBD874C22AEF761400E44233 /* AddNewItemToListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD874C12AEF761400E44233 /* AddNewItemToListViewController.swift */; };
 		FBD874C42AEF76F700E44233 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD874C32AEF76F700E44233 /* BookCell.swift */; };
-		FBD874C62AEF7B8500E44233 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD874C52AEF7B8500E44233 /* ItemDetailsViewController.swift */; };
+		FBD874C62AEF7B8500E44233 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD874C52AEF7B8500E44233 /* BookDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		FBD874BB2AEF759F00E44233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD874C12AEF761400E44233 /* AddNewItemToListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemToListViewController.swift; sourceTree = "<group>"; };
 		FBD874C32AEF76F700E44233 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
-		FBD874C52AEF7B8500E44233 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		FBD874C52AEF7B8500E44233 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D95B598E2AF0C330008E4480 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FBD874C32AEF76F700E44233 /* BookCell.swift */,
+				FBD874C12AEF761400E44233 /* AddNewItemToListViewController.swift */,
+				FBD874B12AEF759D00E44233 /* MainViewController.swift */,
+				FBD874C52AEF7B8500E44233 /* BookDetailsViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		FBD874A12AEF759D00E44233 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +73,13 @@
 		FBD874AC2AEF759D00E44233 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				FBD874C32AEF76F700E44233 /* BookCell.swift */,
-				FBD874C12AEF761400E44233 /* AddNewItemToListViewController.swift */,
+				D95B598E2AF0C330008E4480 /* Presentation */,
 				FBD874AD2AEF759D00E44233 /* AppDelegate.swift */,
 				FBD874AF2AEF759D00E44233 /* SceneDelegate.swift */,
-				FBD874B12AEF759D00E44233 /* MainViewController.swift */,
 				FBD874B32AEF759D00E44233 /* Main.storyboard */,
 				FBD874B62AEF759F00E44233 /* Assets.xcassets */,
 				FBD874B82AEF759F00E44233 /* LaunchScreen.storyboard */,
 				FBD874BB2AEF759F00E44233 /* Info.plist */,
-				FBD874C52AEF7B8500E44233 /* ItemDetailsViewController.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -149,7 +157,7 @@
 			files = (
 				FBD874B22AEF759D00E44233 /* MainViewController.swift in Sources */,
 				FBD874AE2AEF759D00E44233 /* AppDelegate.swift in Sources */,
-				FBD874C62AEF7B8500E44233 /* ItemDetailsViewController.swift in Sources */,
+				FBD874C62AEF7B8500E44233 /* BookDetailsViewController.swift in Sources */,
 				FBD874B02AEF759D00E44233 /* SceneDelegate.swift in Sources */,
 				FBD874C22AEF761400E44233 /* AddNewItemToListViewController.swift in Sources */,
 				FBD874C42AEF76F700E44233 /* BookCell.swift in Sources */,

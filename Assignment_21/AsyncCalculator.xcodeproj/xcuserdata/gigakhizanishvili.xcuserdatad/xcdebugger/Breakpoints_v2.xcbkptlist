@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "43097F28-7BFA-47AB-B21C-DEB30F17DF1C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DBB0F22-6D18-4614-BDF4-5FAFEB4FB3C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncCalculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "runFactorialThread(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4DBB0F22-6D18-4614-BDF4-5FAFEB4FB3C5 - 68add347efaabe5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in AsyncCalculator.ViewController.runFactorialThread(for: Swift.Int) -&gt; ()"
+                  moduleName = "AsyncCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gigakhizanishvili/Programming/Projects/AsyncCalculator/AsyncCalculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "908">
+               </Location>
+               <Location
+                  uuid = "4DBB0F22-6D18-4614-BDF4-5FAFEB4FB3C5 - 68add347efaabe5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in AsyncCalculator.ViewController.runFactorialThread(for: Swift.Int) -&gt; ()"
+                  moduleName = "AsyncCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gigakhizanishvili/Programming/Projects/AsyncCalculator/AsyncCalculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
